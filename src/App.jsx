@@ -499,7 +499,7 @@ export default function Portfolio() {
                 <X size={32} />
               </motion.button>
               <img
-                src="/api/placeholder/400/400"
+                src="/assets/profile/400/400"
                 alt="Fanskie Profile - Full Size"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
