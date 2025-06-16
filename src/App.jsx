@@ -93,7 +93,7 @@ export default function Portfolio() {
 
       {/* Glassmorphism navigation */}
       <motion.nav 
-        className="fixed top-8 left-1/2 transform -translate-x-1/2 z-40 bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 border border-white/20"
+        className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 border border-white/20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
@@ -122,7 +122,7 @@ export default function Portfolio() {
       </motion.nav>
 
       {/* Main content */}
-      <div className="flex flex-col items-center justify-center min-h-screen px-6 pt-20">
+      <div className="flex flex-col items-center justify-center min-h-screen px-6 pt-24">
         <AnimatePresence mode="wait">
           {activeSection === 'home' && (
             <motion.div
@@ -136,24 +136,31 @@ export default function Portfolio() {
               <motion.div
                 variants={itemVariants}
                 animate={floatingAnimation}
-                className="relative mb-8"
+                className="relative mb-12"
               >
                 <div className="w-40 h-40 mx-auto relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-full animate-spin-slow opacity-75"></div>
-                  <motion.img
-                    src="/api/placeholder/200/200"
-                    alt="Fanskie Profile"
-                    className="w-32 h-32 rounded-full absolute top-4 left-4 border-4 border-white shadow-2xl object-cover"
+                  <motion.a
+                    href="https://www.instagram.com/programmerturu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
                     whileHover={{ scale: 1.1 }}
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
-                  />
+                  >
+                    <motion.img
+                      src="/api/placeholder/200/200"
+                      alt="Fanskie Profile"
+                      className="w-32 h-32 rounded-full absolute top-4 left-4 border-4 border-white shadow-2xl object-cover cursor-pointer"
+                    />
+                  </motion.a>
                 </div>
               </motion.div>
 
               <motion.h1 
                 variants={itemVariants}
-                className="text-7xl font-black bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4"
+                className="text-6xl md:text-7xl font-black bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4"
               >
                 Fanskie
               </motion.h1>
