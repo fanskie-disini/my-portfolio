@@ -60,12 +60,12 @@ export default function Portfolio() {
       gradient: "from-blue-500 to-purple-600"
     },
     {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website featuring modern animations and clean design. Perfect showcase of frontend development skills.",
+      title: "YUDON - YouTube Downloader",
+      description: "A modern and minimalistic YouTube video and playlist downloader with support for high-quality downloads. Built with React and Tailwind CSS, powered by an Express.js backend using yt-dlp for reliable video processing.",
       image: "/api/placeholder/400/300", 
-      tech: ["React", "Vite", "Tailwind CSS"],
-      link: "fanskie-site.vercel.app",
-      gradient: "from-purple-500 to-pink-600"
+      tech: ["React", "Tailwind CSS", "Express.js"],
+      link: "https://yudon.vercel.app",
+      gradient: "from-red-500 to-red-600"
     },
     {
       title: "EasyPresensi",
