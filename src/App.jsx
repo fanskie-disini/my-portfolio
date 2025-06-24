@@ -61,7 +61,7 @@ export default function Portfolio() {
     },
     {
       title: "YUDON - YouTube Downloader",
-      description: "A modern and minimalistic YouTube video and playlist downloader with support for high-quality downloads. Built with React and Tailwind CSS, powered by an Express.js backend using yt-dlp for reliable video processing.",
+      description: "A modern and minimalistic YouTube video and playlist downloader with support for high-quality mp3 and mp4 downloads. Built with React and Tailwind CSS, powered by an Express.js backend using yt-dlp for reliable video processing.",
       image: "/api/placeholder/400/300", 
       tech: ["React", "Tailwind CSS", "Express.js"],
       link: "https://yudon.vercel.app",
